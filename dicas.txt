@@ -5,6 +5,11 @@ git da aula
 https://github.com/devsuperior/aulao005.git
 https://github.com/devsuperior/aulao005
 
+Entrar no H2
+http://localhost:8080/h2-console
+
+
+
 Category cat1 = new Category(1L, "Electronics");
 Category cat2 = new Category(2L, "Books");
 
