@@ -1,0 +1,104 @@
+Seu primeiro projeto Java web no Spring Boot - Aulão #005
+https://www.youtube.com/watch?v=nQr_X62vq-k&t=1401s
+
+git da aula
+https://github.com/devsuperior/aulao005.git
+https://github.com/devsuperior/aulao005
+
+Category cat1 = new Category(1L, "Electronics");
+Category cat2 = new Category(2L, "Books");
+
+Product p1 = new Product(1L, "TV", 2200.00, cat1);
+Product p2 = new Product(2L, "Domain Driven Design", 120.00, cat2);
+Product p3 = new Product(3L, "PS5", 2800.00, cat1);
+Product p4 = new Product(4L, "Docker", 100.00, cat2);
+
+cat1.getProducts().addAll(Arrays.asList(p1, p3));
+cat2.getProducts().addAll(Arrays.asList(p2, p4));
+
+
+MEU git da aula
+https://github.com/cpm1163/aulao005.git
+https://github.com/devsuperior/aulao005
+
+
+
+
+
+Work Space
+C:\Users\carlo\projects\Java\ws-sts\myfirstproject
+
+
+
+$ git init
+Initialized empty Git repository in C:/Users/carlo/projects/Java/ws-sts/myfirstproject/.git/
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git remote add origin https://github.com/cpm1163/aulao005.git
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main/java/com/devsuperior/myfirstproject/MyfirstprojectApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/test/java/com/devsuperior/myfirstproject/MyfirstprojectApplicationTests.java.
+The file will have its original line endings in your working directory
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git commit -m "Category"
+[master (root-commit) 9706e1b] Category
+ 8 files changed, 239 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/devsuperior/myfirstproject/MyfirstprojectApplication.java
+ create mode 100644 src/main/java/com/devsuperior/myfirstproject/entities/Category.java
+ create mode 100644 src/main/java/com/devsuperior/myfirstproject/repositories/CategoryRepository.java
+ create mode 100644 src/main/java/com/devsuperior/myfirstproject/resources/CategoryResource.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/devsuperior/myfirstproject/MyfirstprojectApplicationTests.java
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+$ git push -u origin master
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (25/25), 3.50 KiB | 511.00 KiB/s, done.
+Total 25 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/cpm1163/aulao005.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+carlo@LAPTOP-4PRNFCC8 MINGW64 ~/projects/Java/ws-sts/myfirstproject (master)
+
